@@ -18,11 +18,6 @@ app.use(express.static("public"));
 connectDB();
 
 
-app.get("/", (req, res) => {
-    res.status(200).sendFile(__dirname + "/index.html"); 
-});
-
-
 app.post("/register", async (req, res) => {
     const { name, email, password, confirmPassword } = req.body;
     if (password !== confirmPassword) {
@@ -74,7 +69,8 @@ app.post("/login", async (req, res) => {
         if (!passwordMatch) {
             return res.status(401).json({ success: false, error: "Username or password does not match" });
         }
-        res.status(200).json({ success: true, message: `Login successful, welcome ${username}` });
+        res.status(200).json({ success: true, message: `Login successful, welcome ${username}`, redirect: "/main.html" });
+        
     } catch (error) {
         console.error(error);
         res.status(500).json({ success: false, error: "Server error" });
@@ -110,5 +106,5 @@ app.delete("/users/delete", async (req, res) => {
 });
 
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5500;
 app.listen(port, () => console.log(`Server is running on http://localhost:${port}`));

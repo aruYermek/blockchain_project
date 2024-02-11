@@ -63,9 +63,7 @@ function loginUser() {
 
         console.log(data);
         if (data.success) {
-            alert(data.message);
-
-            loginForm.reset();
+            window.location.href = data.redirect;
         } else {
             alert(data.error);
         }

@@ -1,6 +1,17 @@
-# Registration/Login Web App using MongoDB
+# Final Project
+Final project will be a decentralized professional networking
+platform using the Ethereum blockchain and Solidity smart
+contracts. The platform will allow users to create profiles,
+connect with other professionals, and showcase their skills and
+experiences. The primary goal is to create a web3 Linkedln-like
+application where users have control over their data, and
+interactions are secured by smart contracts.
 
-This is a simple web application for user registration and login, built using Node.js, Express, MongoDB, and bcrypt for password hashing.
+# Assigment 1
+1.Registration/Login using MongoDB
+2. Connect Wallet page
+
+We created Registraition/Login page and access to Metomask wallet and connect it
 
 ## Getting Started
 
@@ -34,7 +45,7 @@ Make sure you have the following software installed on your machine:
 ### Configuration
 1. Create a .env file in the project root and add the following configurations:
    ```bash
-   PORT=3000
+   PORT=5500
    MONGO_URL = mongodb+srv://gulim:gulim212386@main.4o7rqo1.mongodb.net/my_db?retryWrites=true&w=majority
 Adjust the **PORT** and **MONGODB_URI** as needed.
 
@@ -43,11 +54,12 @@ Adjust the **PORT** and **MONGODB_URI** as needed.
 2. Run the application:
    ```bash
    npm run server
-The server will be running at http://localhost:3000
+The server will be running at http://localhost:5500
 
 ### Usage
-1. Open your web browser and go to http://localhost:3000
+1. Open your web browser and go to http://localhost:5500
 2. Follow the on-screen instructions to register or login.
+3. After correct register/login, you can connect your wallet
 
 ### API Endpoints
 * **POST /register**: Register a new user.
@@ -64,10 +76,7 @@ The server will be running at http://localhost:3000
 ### License
 No license :D
 
-Contact me
-gulimzhan.orynbasar@gmail.com
-
-
-
-
-
+Contact us
+221819@astanait.edu.kz(Gulimzhan Orynbassar)
+220612@astanait.edu.kz(Yermek Aruzhan)
+221935@astana.edu.kz(Dilnaza Baidakhanova)

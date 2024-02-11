@@ -1,7 +1,6 @@
-// Подключение библиотеки mongoose
+
 const mongoose = require("mongoose");
 
-// Асинхронная функция для подключения к MongoDB
 const connectDB = async () => {
     try {
         
